@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Home : UIViewController
 
+//Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblScore;
+
+//Actions
+- (IBAction)btnPushSender:(id)sender;
 
 @end
 
