@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F224CB551A70AE8300AE01E2 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = F224CB541A70AE8300AE01E2 /* Scores.m */; };
 		F29BFC5A1A6DF08B00D02F7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC591A6DF08B00D02F7C /* main.m */; };
 		F29BFC5D1A6DF08B00D02F7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC5C1A6DF08B00D02F7C /* AppDelegate.m */; };
 		F29BFC601A6DF08B00D02F7C /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC5F1A6DF08B00D02F7C /* Home.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F224CB531A70AE8300AE01E2 /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
+		F224CB541A70AE8300AE01E2 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
 		F29BFC541A6DF08B00D02F7C /* PushGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29BFC581A6DF08B00D02F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29BFC591A6DF08B00D02F7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				F29BFC5C1A6DF08B00D02F7C /* AppDelegate.m */,
 				F29BFC5E1A6DF08B00D02F7C /* Home.h */,
 				F29BFC5F1A6DF08B00D02F7C /* Home.m */,
+				F224CB531A70AE8300AE01E2 /* Scores.h */,
+				F224CB541A70AE8300AE01E2 /* Scores.m */,
 				F29BFC611A6DF08B00D02F7C /* Main.storyboard */,
 				F29BFC641A6DF08B00D02F7C /* Images.xcassets */,
 				F29BFC661A6DF08B00D02F7C /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				F29BFC601A6DF08B00D02F7C /* Home.m in Sources */,
 				F29BFC5D1A6DF08B00D02F7C /* AppDelegate.m in Sources */,
+				F224CB551A70AE8300AE01E2 /* Scores.m in Sources */,
 				F29BFC5A1A6DF08B00D02F7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +418,7 @@
 				F29BFC791A6DF08B00D02F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29BFC7A1A6DF08B00D02F7C /* Build configuration list for PBXNativeTarget "PushGameTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				F29BFC7C1A6DF08B00D02F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
