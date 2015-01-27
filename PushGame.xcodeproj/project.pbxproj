@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F224CB551A70AE8300AE01E2 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = F224CB541A70AE8300AE01E2 /* Scores.m */; };
+		F26C5CEB1A76E0AB0036EE41 /* kim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26C5CEA1A76E0AB0036EE41 /* kim.jpg */; };
+		F26C5CED1A7715FB0036EE41 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F26C5CEC1A7715FB0036EE41 /* libsqlite3.dylib */; };
+		F26C5CF21A7716830036EE41 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C5CF11A7716830036EE41 /* DataController.m */; };
+		F26C5CF51A77178D0036EE41 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C5CF41A77178D0036EE41 /* Record.m */; };
+		F26C5CFB1A7754930036EE41 /* cellRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C5CFA1A7754930036EE41 /* cellRecord.m */; };
 		F29BFC5A1A6DF08B00D02F7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC591A6DF08B00D02F7C /* main.m */; };
 		F29BFC5D1A6DF08B00D02F7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC5C1A6DF08B00D02F7C /* AppDelegate.m */; };
 		F29BFC601A6DF08B00D02F7C /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BFC5F1A6DF08B00D02F7C /* Home.m */; };
@@ -30,6 +35,14 @@
 /* Begin PBXFileReference section */
 		F224CB531A70AE8300AE01E2 /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
 		F224CB541A70AE8300AE01E2 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
+		F26C5CEA1A76E0AB0036EE41 /* kim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kim.jpg; sourceTree = "<group>"; };
+		F26C5CEC1A7715FB0036EE41 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F26C5CF01A7716830036EE41 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		F26C5CF11A7716830036EE41 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		F26C5CF31A77178D0036EE41 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		F26C5CF41A77178D0036EE41 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		F26C5CF91A7754930036EE41 /* cellRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellRecord.h; sourceTree = "<group>"; };
+		F26C5CFA1A7754930036EE41 /* cellRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellRecord.m; sourceTree = "<group>"; };
 		F29BFC541A6DF08B00D02F7C /* PushGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29BFC581A6DF08B00D02F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29BFC591A6DF08B00D02F7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26C5CED1A7715FB0036EE41 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F26C5CE91A76E0990036EE41 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				F26C5CEA1A76E0AB0036EE41 /* kim.jpg */,
+			);
+			name = static;
+			sourceTree = "<group>";
+		};
+		F26C5CEE1A7716100036EE41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26C5CEC1A7715FB0036EE41 /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F26C5CEF1A77164B0036EE41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F26C5CF01A7716830036EE41 /* DataController.h */,
+				F26C5CF11A7716830036EE41 /* DataController.m */,
+				F26C5CF91A7754930036EE41 /* cellRecord.h */,
+				F26C5CFA1A7754930036EE41 /* cellRecord.m */,
+				F26C5CF31A77178D0036EE41 /* Record.h */,
+				F26C5CF41A77178D0036EE41 /* Record.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F29BFC4B1A6DF08B00D02F7C = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +127,9 @@
 		F29BFC561A6DF08B00D02F7C /* PushGame */ = {
 			isa = PBXGroup;
 			children = (
+				F26C5CEF1A77164B0036EE41 /* Models */,
+				F26C5CEE1A7716100036EE41 /* Frameworks */,
+				F26C5CE91A76E0990036EE41 /* static */,
 				F29BFC5B1A6DF08B00D02F7C /* AppDelegate.h */,
 				F29BFC5C1A6DF08B00D02F7C /* AppDelegate.m */,
 				F29BFC5E1A6DF08B00D02F7C /* Home.h */,
@@ -173,6 +219,7 @@
 				TargetAttributes = {
 					F29BFC531A6DF08B00D02F7C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					F29BFC6C1A6DF08B00D02F7C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -207,6 +254,7 @@
 				F29BFC631A6DF08B00D02F7C /* Main.storyboard in Resources */,
 				F29BFC681A6DF08B00D02F7C /* LaunchScreen.xib in Resources */,
 				F29BFC651A6DF08B00D02F7C /* Images.xcassets in Resources */,
+				F26C5CEB1A76E0AB0036EE41 /* kim.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +275,9 @@
 				F29BFC601A6DF08B00D02F7C /* Home.m in Sources */,
 				F29BFC5D1A6DF08B00D02F7C /* AppDelegate.m in Sources */,
 				F224CB551A70AE8300AE01E2 /* Scores.m in Sources */,
+				F26C5CF21A7716830036EE41 /* DataController.m in Sources */,
+				F26C5CF51A77178D0036EE41 /* Record.m in Sources */,
+				F26C5CFB1A7754930036EE41 /* cellRecord.m in Sources */,
 				F29BFC5A1A6DF08B00D02F7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

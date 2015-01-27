@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Scores : UIViewController
+@interface Scores : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end

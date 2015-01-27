@@ -11,10 +11,14 @@
 @interface Home : UIViewController
 
 //Labels
-@property (strong, nonatomic) IBOutlet UILabel *lblScore;
+@property (strong, nonatomic) IBOutlet UILabel *lblTimeToFinish;
+@property (weak, nonatomic) IBOutlet UIButton *btnPush;
 
 //Actions
 - (IBAction)btnPushSender:(id)sender;
+
+//Images
+@property (strong, nonatomic) IBOutlet UIImageView *imgBackground;
 
 @end
 
