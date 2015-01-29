@@ -12,6 +12,7 @@
 #import "cellRecord.h"
 
 NSArray *records;
+DataController *dataController;
 
 @interface Scores ()
 
@@ -23,9 +24,11 @@ NSArray *records;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    DataController *dataController = [[DataController alloc]init];
+    dataController = [[DataController alloc]init];
     
+    NSLog(@"Se inicia el controlador");
     records = [dataController getScores];
+    NSLog(@"total de records %d", records.count);
     
 }
 
@@ -47,6 +50,8 @@ NSArray *records;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
     
     static NSString *CellIdentifier = @"cellRecord";
     
