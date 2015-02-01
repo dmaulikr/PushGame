@@ -13,6 +13,8 @@
 
 NSArray *records;
 DataController *dataController;
+NSIndexPath *currentIndexPath;
+
 
 @interface Scores ()
 
@@ -26,10 +28,13 @@ DataController *dataController;
     
     dataController = [[DataController alloc]init];
     
-    NSLog(@"Se inicia el controlador");
     records = [dataController getScores];
     NSLog(@"total de records %d", records.count);
     
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self.tblRecords scrollToRowAtIndexPath:currentIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,8 +56,7 @@ DataController *dataController;
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-    
+    Record *lastRecord = [dataController getLastRecord];
     static NSString *CellIdentifier = @"cellRecord";
     
     cellRecord *cell = (cellRecord *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -61,8 +65,18 @@ DataController *dataController;
         cell = [[cellRecord alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.lblScore.text = records[indexPath.row];
-    cell.lblTimestamp.text = records[indexPath.row];
+    
+    Record *r = records[indexPath.row];
+    cell.lblScore.text = [NSString stringWithFormat:@"%@", r.score];
+    cell.lblTimestamp.text = r.timeStamp;
+    
+    if ([r.timeStamp isEqualToString:lastRecord.timeStamp]) {
+        cell.backgroundColor = [UIColor orangeColor];
+        currentIndexPath = indexPath;
+    }
+    else{
+        cell.backgroundColor = [UIColor clearColor];
+    }
     
     return cell;
 }

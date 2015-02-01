@@ -17,5 +17,6 @@
 
 - (void)initDatabase;
 - (void) insertScore:(Record*)record;
-- (NSArray*) getScores;
+- (NSMutableArray*) getScores;
+- (Record*) getLastRecord;
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Scores : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tblRecords;
 
 @end
