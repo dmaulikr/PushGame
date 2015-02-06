@@ -98,7 +98,6 @@ NSInteger *lastRecord;
         NSLog(@"Error al abrir la base de datos");
     }
     
-    NSLog(@"%lld",(long long) lastRecord);
     return scores;
 }
 

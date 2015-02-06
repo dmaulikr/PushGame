@@ -34,6 +34,7 @@ NSIndexPath *currentIndexPath;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"viewDidAppear");
     [self.tblRecords scrollToRowAtIndexPath:currentIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
@@ -65,14 +66,14 @@ NSIndexPath *currentIndexPath;
         cell = [[cellRecord alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    
     Record *r = records[indexPath.row];
     cell.lblScore.text = [NSString stringWithFormat:@"%@", r.score];
     cell.lblTimestamp.text = r.timeStamp;
     
     if ([r.timeStamp isEqualToString:lastRecord.timeStamp]) {
-        cell.backgroundColor = [UIColor orangeColor];
-        currentIndexPath = indexPath;
+        cell.backgroundColor = [UIColor blueColor];
+        currentIndexPath = [NSIndexPath indexPathForRow:(int)indexPath.row inSection:0];
+        
     }
     else{
         cell.backgroundColor = [UIColor clearColor];
@@ -81,4 +82,8 @@ NSIndexPath *currentIndexPath;
     return cell;
 }
 
+- (IBAction)btnBackSender:(id)sender {
+    
+    [self performSegueWithIdentifier:@"playAgain" sender:self];
+}
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F224CB551A70AE8300AE01E2 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = F224CB541A70AE8300AE01E2 /* Scores.m */; };
+		F245DBE51A855A9C008A4DBB /* launchPush.png in Resources */ = {isa = PBXBuildFile; fileRef = F245DBE41A855A9C008A4DBB /* launchPush.png */; };
 		F26C5CEB1A76E0AB0036EE41 /* kim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26C5CEA1A76E0AB0036EE41 /* kim.jpg */; };
 		F26C5CED1A7715FB0036EE41 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F26C5CEC1A7715FB0036EE41 /* libsqlite3.dylib */; };
 		F26C5CF21A7716830036EE41 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C5CF11A7716830036EE41 /* DataController.m */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		F224CB531A70AE8300AE01E2 /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
 		F224CB541A70AE8300AE01E2 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
+		F245DBE41A855A9C008A4DBB /* launchPush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchPush.png; sourceTree = "<group>"; };
 		F26C5CEA1A76E0AB0036EE41 /* kim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kim.jpg; sourceTree = "<group>"; };
 		F26C5CEC1A7715FB0036EE41 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F26C5CF01A7716830036EE41 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		F26C5CE91A76E0990036EE41 /* static */ = {
 			isa = PBXGroup;
 			children = (
+				F245DBE41A855A9C008A4DBB /* launchPush.png */,
 				F26C5CEA1A76E0AB0036EE41 /* kim.jpg */,
 			);
 			name = static;
@@ -254,6 +257,7 @@
 				F29BFC631A6DF08B00D02F7C /* Main.storyboard in Resources */,
 				F29BFC681A6DF08B00D02F7C /* LaunchScreen.xib in Resources */,
 				F29BFC651A6DF08B00D02F7C /* Images.xcassets in Resources */,
+				F245DBE51A855A9C008A4DBB /* launchPush.png in Resources */,
 				F26C5CEB1A76E0AB0036EE41 /* kim.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

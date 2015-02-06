@@ -21,6 +21,11 @@ NSTimer *pushTimer, *chronTimer;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self initController];
+}
+
+- (void) initController{
     counter = 0;
     seconder = 10;
     self.imgBackground.alpha = 0.35;
@@ -31,7 +36,6 @@ NSTimer *pushTimer, *chronTimer;
     
     DataController *db = [[DataController alloc] init];
     [db initDatabase];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +62,8 @@ NSTimer *pushTimer, *chronTimer;
     
     [dataController insertScore:record];
     
+    counter = 0;
+    seconder = 0;
     [self performSegueWithIdentifier:@"GoToScores" sender:self];
 }
 

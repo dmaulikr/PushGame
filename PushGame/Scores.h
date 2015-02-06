@@ -10,5 +10,6 @@
 
 @interface Scores : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tblRecords;
+- (IBAction)btnBackSender:(id)sender;
 
 @end
